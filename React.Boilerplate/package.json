@@ -1,0 +1,86 @@
+{
+  "name": "rapiddeploy-frontend",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "@auth0/auth0-spa-js": "^1.1.1",
+    "@testing-library/jest-dom": "^4.0.0",
+    "babel-eslint": "^10.0.2",
+    "eslint-plugin-redux-saga": "^1.1.0",
+    "history": "^4.9.0",
+    "lint-staged": "^9.2.3",
+    "plop": "^2.4.0",
+    "prettier": "^1.18.2",
+    "react": "^16.9.0",
+    "react-app-rewire-styled-components": "^3.0.2",
+    "react-app-rewired": "2.0.2-next.0",
+    "react-dom": "^16.9.0",
+    "react-helmet": "^5.2.1",
+    "react-router-dom": "^5.0.1",
+    "react-scripts": "^3.1.1",
+    "react-styleguidist": "^9.1.14",
+    "signalr-client-react": "^0.2.0",
+    "styled-components": "^4.3.2",
+    "styled-components-breakpoint": "^2.1.1",
+    "styled-reset": "^3.0.2",
+    "stylelint-config-styled-components": "^0.1.1"
+  },
+  "scripts": {
+    "start": "react-app-rewired start",
+    "build": "react-app-rewired build",
+    "test": "cross-env CI=true react-scripts test --env=jsdom -u",
+    "eject": "react-scripts eject",
+    "generate": "plop --plopfile internals/generators/index.js",
+    "lint": "eslint src && stylelint src/**/*.js",
+    "lint:css": "stylelint src/**/*.js"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm run lint && npm test"
+    }
+  },
+  "jest": {
+    "coverageThreshold": {
+      "global": {
+        "branches": 90,
+        "functions": 90,
+        "lines": 90,
+        "statements": -10
+      }
+    }
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@testing-library/react": "^9.1.1",
+    "cross-env": "^5.2.0",
+    "eslint": "^6.2.0",
+    "eslint-config-airbnb": "^18.0.1",
+    "eslint-config-airbnb-base": "^14.0.0",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-import-resolver-webpack": "^0.11.1",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.1.0",
+    "eslint-plugin-react": "^7.14.3",
+    "eslint-plugin-react-hooks": "^1.7.0",
+    "husky": "^3.0.4",
+    "stylelint": "^10.1.0",
+    "stylelint-config-recommended": "^2.2.0",
+    "stylelint-processor-styled-components": "^1.8.0",
+    "whatwg-fetch": "^3.0.0"
+  }
+}

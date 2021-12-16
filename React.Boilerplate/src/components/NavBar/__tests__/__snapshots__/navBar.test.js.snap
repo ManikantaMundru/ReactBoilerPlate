@@ -1,0 +1,43 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`does component render 1`] = `
+<DocumentFragment>
+  <div>
+    <div
+      class="sc-bdVaJa bDWFJH"
+    >
+      <h1>
+        Please click login to get started
+      </h1>
+      <button
+        class="sc-bwzfXH bvjjuq"
+      >
+        Log in
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`does component render 2`] = `
+<DocumentFragment>
+  <div>
+    <div
+      class="sc-bdVaJa bDWFJH"
+    >
+      <h1>
+        Welcome tester, you are now logged in
+      </h1>
+      <img
+        alt="avatar"
+        src="https://images.squarespace-cdn.com/content/5c4f53218f5130618631fc97/1550519005127-SXL0XBRPDP4NJ762XBRV/RapidDeploy+logo+2019+TM-01.png?format=1500w&content-type=image%2Fpng"
+      />
+      <button
+        class="sc-bwzfXH bvjjuq"
+      >
+        Log out
+      </button>
+    </div>
+  </div>
+</DocumentFragment>
+`;

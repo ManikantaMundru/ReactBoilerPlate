@@ -1,0 +1,25 @@
+/**
+ *
+ * {{ properCase name }}
+ *
+ */
+
+{{#if memo}}
+import React, { memo } from 'react';
+{{else}}
+import React from 'react';
+{{/if}}
+// import PropTypes from 'prop-types';
+{{#if wantStyledComp}}
+import Styled{{ properCase name }} from './styledComponents/styled{{ properCase name }}';
+{{/if}}
+
+const {{ properCase name }} = props => {{#if wantStyledComp}}<Styled{{ properCase name }}></Styled{{ properCase name }}>{{else}}<div></div>{{/if}};
+
+{{ properCase name }}.propTypes = {};
+
+{{#if memo}}
+export default memo({{ properCase name }});
+{{else}}
+export default {{ properCase name }};
+{{/if}}
